@@ -1,53 +1,41 @@
 .category {
+  padding-bottom: 150px;
   &__inner {
-    margin-top: 50px;
     display: flex;
     gap: 20px;
-    padding-bottom: 150px;
+  }
+  &__title {
+    margin-bottom: 30px;
   }
   &__text {
-    margin-top: 30px;
-    color: #111;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
   }
   &__items {
     display: flex;
-    margin-top: 30px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px 20px;
   }
 }
 
-
-.category-menu {
-  &__head {
-  }
-
-  &__list {
-  }
-}
-
-.burger-btn {
-}
-
 .categories {
   &__item {
     width: calc(100% / 2 - 20px);
-    h3 {
+    &__title {
       color: #111;
       font-size: 18px;
       font-style: normal;
       font-weight: 700;
       line-height: 20px;
+      margin-bottom: 20px;
     }
     &__block {
-      margin-top: 20px;
       display: flex;
       border-radius: 6px;
-      border: 1px solid #E6E9EB;
+      border: 1px solid #e6e9eb;
       img {
         height: 200px;
         width: 200px;
@@ -64,11 +52,11 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 22px;
+        margin-bottom: 10px;
       }
       p {
         color: #000;
         font-size: 12px;
-        margin-top: 10px;
         font-style: normal;
         font-weight: 400;
         line-height: 15px;
@@ -78,5 +66,52 @@
   }
 }
 
-.title {
+@media screen and (max-width: 1080px) {
+  .category {
+    &__inner {
+      flex-direction: column;
+    }
+  }
+  .categories {
+    &__item {
+      &__title {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .category {
+    &__inner {
+      flex-direction: column;
+    }
+  }
+  .categories {
+    &__item {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .category {
+    &__title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .categories {
+    &__item {
+      width: 100%;
+      &__block {
+        flex-direction: column;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

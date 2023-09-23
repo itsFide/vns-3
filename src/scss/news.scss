@@ -1,6 +1,7 @@
 .news {
   padding-bottom: 100px;
   &__preview {
+    margin-bottom: 50px;
     display: flex;
     gap: 20px;
     img {
@@ -9,28 +10,27 @@
       object-fit: cover;
     }
     &__info {
-      p {
-        margin-top: 20px;
-        color: #000;
+      .news__title {
+        color: #19191a;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 20px;
+      }
+      .news__text {
         font-size: 16px;
         font-weight: 400;
         line-height: 22px;
         letter-spacing: -0.2px;
         opacity: 0.8;
-      }
-      h2 {
-        color: #19191A;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 35px;
+        margin-bottom: 20px;
       }
       width: 50%;
     }
   }
 
   &__items {
-    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 50px 20px;
@@ -38,9 +38,13 @@
 
   &__item {
     width: calc(100% / 3 - 20px);
-    h3 {
-      margin-top: 20px;
-      color: #19191A;
+    img {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    &__name {
+      color: #19191a;
       font-size: 20px;
       font-weight: 700;
       line-height: 20px;
@@ -52,16 +56,10 @@
       font-weight: 400;
       line-height: 14px;
     }
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
   }
 }
 
 .more-btn {
-  color: #19191A;
-  margin-top: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;

@@ -1,12 +1,15 @@
-// Модальное окно
-function bindModal(trigger, modal, close) {
-  (trigger = document.querySelector(trigger)),
+function bindModal(triggers, modal, close) {
+  (triggers = document.querySelectorAll(triggers)),
     (modal = document.querySelector(modal)),
     (close = document.querySelector(close));
-  trigger.addEventListener("click", (e) => {
-    e.preventDefault();
-    modal.style.display = "flex";
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.style.display = "flex";
+    });
   });
+
   close.addEventListener("click", () => {
     modal.style.display = "none";
   });
@@ -20,4 +23,4 @@ function bindModal(trigger, modal, close) {
 // ПЕРВЫЙ аргумент - класс кнопки, при клике на которую будет открываться модальное окно.
 // ВТОРОЙ аргумент - класс самого модального окна.
 // ТРЕТИЙ аргумент - класс кнопки, при клике на которую будет закрываться модальное окно.
-bindModal(".modal__btn", ".modal__wrapper", ".modal__close");
+bindModal(".product__item__cart-btn", ".modal__wrapper", ".modal__close");

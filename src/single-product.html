@@ -1,118 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>ANS</title>
     @@include('components/styles.html')
-    <link rel="stylesheet" href="css/single-product.css">
-</head>
-<body>
-@@include('components/header.html')
-<main class="main">
-    <section class="product">
+    <link rel="stylesheet" href="css/single-product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    @@include('components/header.html')
+    <main class="main">
+      <section class="product">
         <div class="container">
-            @@include('components/breadcrumbs.html')
-            <div class="product__inner">
-                <div class="product__top">
-                    <div class="product__images">
-                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                             class="swiper mySwiper2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div thumbsSlider="" class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                                <div class="swiper-slide product__image">
-                                    <img src="images/product-empty.png"/>
-                                </div>
-                            </div>
-                        </div>
+          @@include('components/breadcrumbs.html')
+          <div class="product__inner">
+            <div class="product__top">
+              <div class="product__images">
+                <div
+                  style="
+                    --swiper-navigation-color: #fff;
+                    --swiper-pagination-color: #fff;
+                  "
+                  class="swiper mySwiper2"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
                     </div>
-                    <div class="product__info">
-                        <h2 class="product__name">RV-3NCT5065-I3 (6.0-50)</h2>
-                        <span class="product__article">Артикул RBZ-301356</span>
-                        <p>Уличная IP-камера RV-3NCT5065 (6.0-50) с максимальным разрешением 5 Мп и частотой кадров 25
-                            к/с.</p>
-                        <button class="add-product-btn filled-btn">
-                            Добавить в корзину
-                        </button>
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
                     </div>
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
+                    </div>
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
+                    </div>
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
+                    </div>
+                  </div>
                 </div>
-                <div class="product__bottom">
-                    <div class="product__descr">
-                        <h4>Описание</h4>
-                        <div class="product__descr__items">
-                            <div class="product__descr__item">
-                                <span>Кодирование видеопотока стандартом сжатия MJPEG, без ограничений.</span>
-                                <p>Сжатие видео потока кодеком MJPEG в максимальном разрешении без ограничения по
-                                    битрейту позволяет получить полноразмерные стоп-кадры без потери качества для
-                                    распознавания и идентификации объектов. MJPEG предъявляет минимальные требования к
-                                    вычислительным ресурсам системы, что уменьшает нагрузку на сервер и серверное
-                                    ПО.</p>
-                            </div>
-                            <div class="product__descr__item">
-                                <span>Настройка среднего уровня яркости.</span>
-                                <p>При использовании видеоаналитики, например “Трекер объекта”, поиск объекта по цвету,
-                                    очень важной составляющей является цветопередача видеоизображения. В IP-камерах
-                                    Rubezh настройка среднего уровня яркости позволяет получить более естественную
-                                    цветопередачу по сравнению с IP-камерами, где такой функции нет.</p>
-                            </div>
-                            <div class="product__descr__item">
-                                <span>Технология Zeroconf.</span>
-                                <p>Это набор технологий, которые автоматически создают IP-сеть без конфигурации или
-                                    специальных серверов. В том случае если IP-камера получает IP-адрес от DHCP-сервера,
-                                    а DHCP-сервер, по техническим причинам недоступен, технология ZeroConf настраивает
-                                    на IP-камере статический IP-адрес, по которому к IP-камере всегда можно
-                                    подключиться..</p>
-                            </div>
-                        </div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
                     </div>
-                    <div class="product__characteristics">
-                        <h4>Характеристика</h4>
-                        <table class="product__table">
-                            <tr>
-                                <td>Наименование</td>
-                                <td>Plixus AE-R PS</td>
-                            </tr>
-                            <tr>
-                                <td>Партномер</td>
-                                <td>Plixus AE-R PS</td>
-                            </tr>
-                        </table>
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
                     </div>
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
+                    </div>
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
+                    </div>
+                    <div class="swiper-slide product__image">
+                      <img src="images/product-empty.png" />
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="product__info">
+                <h2 class="product__name">RV-3NCT5065-I3 (6.0-50)</h2>
+                <span class="product__article">Артикул RBZ-301356</span>
+                <p>
+                  Уличная IP-камера RV-3NCT5065 (6.0-50) с максимальным
+                  разрешением 5 Мп и частотой кадров 25 к/с.
+                </p>
+                <button class="add-product-btn filled-btn">
+                  Добавить в корзину
+                </button>
+              </div>
             </div>
+            <div class="product__bottom">
+              <div class="product__descr">
+                <h4>Описание</h4>
+                <div class="product__descr__items">
+                  <div class="product__descr__item">
+                    <span
+                      >Кодирование видеопотока стандартом сжатия MJPEG, без
+                      ограничений.</span
+                    >
+                    <p>
+                      Сжатие видео потока кодеком MJPEG в максимальном
+                      разрешении без ограничения по битрейту позволяет получить
+                      полноразмерные стоп-кадры без потери качества для
+                      распознавания и идентификации объектов. MJPEG предъявляет
+                      минимальные требования к вычислительным ресурсам системы,
+                      что уменьшает нагрузку на сервер и серверное ПО.
+                    </p>
+                  </div>
+                  <div class="product__descr__item">
+                    <span>Настройка среднего уровня яркости.</span>
+                    <p>
+                      При использовании видеоаналитики, например “Трекер
+                      объекта”, поиск объекта по цвету, очень важной
+                      составляющей является цветопередача видеоизображения. В
+                      IP-камерах Rubezh настройка среднего уровня яркости
+                      позволяет получить более естественную цветопередачу по
+                      сравнению с IP-камерами, где такой функции нет.
+                    </p>
+                  </div>
+                  <div class="product__descr__item">
+                    <span>Технология Zeroconf.</span>
+                    <p>
+                      Это набор технологий, которые автоматически создают
+                      IP-сеть без конфигурации или специальных серверов. В том
+                      случае если IP-камера получает IP-адрес от DHCP-сервера, а
+                      DHCP-сервер, по техническим причинам недоступен,
+                      технология ZeroConf настраивает на IP-камере статический
+                      IP-адрес, по которому к IP-камере всегда можно
+                      подключиться..
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product__characteristics">
+                <h4>Характеристика</h4>
+                <table class="product__table">
+                  <tr>
+                    <td>Наименование</td>
+                    <td>Plixus AE-R PS</td>
+                  </tr>
+                  <tr>
+                    <td>Партномер</td>
+                    <td>Plixus AE-R PS</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-</main>
-@@include('components/footer.html')
-</body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="js/swiper.js"></script>
+      </section>
+    </main>
+    @@include('components/footer.html')
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </html>

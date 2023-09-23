@@ -1,0 +1,102 @@
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: none;
+  .modal {
+    background: white;
+    padding: 50px;
+    border-radius: 5px;
+    &__title {
+      text-align: center;
+    }
+    &__close {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.modal {
+  max-width: 780px;
+
+  &__top {
+    gap: 50px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__product-image {
+    position: relative;
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+  &__product-info {
+    width: 50%;
+  }
+  &__product-name {
+    margin-bottom: 17px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  &__product-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+
+  &__counter {
+    width: 100px;
+    gap: 25px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+  }
+
+  &__btn {
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .filled-btn {
+    background-color: #1b3768;
+    &:hover {
+      background-color: #254a89;
+    }
+  }
+  .outline-btn {
+    border: 1px solid #1b3768;
+    &:hover {
+      background-color: #1b3768;
+      color: white;
+    }
+  }
+}

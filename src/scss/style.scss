@@ -1,13 +1,18 @@
-@import 'components/vars';
-@import 'components/global';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/media';
-@import 'components/aside';
+@import "components/vars";
+@import "components/global";
+@import "components/header";
+@import "components/footer";
+@import "components/media";
+@import "components/aside";
 
 .filled-btn {
   border-radius: 3px;
-  background: #072A40;
+  color: white;
+  transition: 0.2s all ease;
+  background: #072a40;
+  &:hover {
+    background: #0a3b59;
+  }
 }
 
 .pd20 {
@@ -25,7 +30,8 @@
   margin-top: 30px;
   margin-bottom: 50px;
 
-  span, a {
+  span,
+  a {
     color: #777;
     font-size: 14px;
     font-weight: 400;
@@ -34,8 +40,28 @@
 }
 
 .outline-btn {
+  transition: 0.2s all ease;
   border-radius: 18px;
-  border: 1px solid #F49719;
+  border: 1px solid #f49719;
+  &:hover {
+    background-color: #f49719;
+    color: white;
+  }
+}
+
+.counter {
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 50px;
+  border: 0.5px solid #979797;
+  opacity: 0.5;
+  border-radius: 3px;
+  justify-content: space-between;
+  svg {
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 450px) {

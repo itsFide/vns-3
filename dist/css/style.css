@@ -128,7 +128,7 @@ button {
   padding: 27.5px 0;
 }
 .header__menu ul li:hover .dropdown {
-  height: auto;
+  visibility: visible;
 }
 .header__menu ul a {
   font-size: 15px;
@@ -142,18 +142,19 @@ button {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #F49719;
+  background-color: #f49719;
   position: absolute;
   bottom: 0;
 }
 .header .dropdown {
   position: absolute;
   top: 75px;
-  height: 0;
+  height: auto;
+  z-index: 1;
   left: 0;
   right: 0;
-  overflow: hidden;
   width: 100vw;
+  visibility: hidden;
   background-color: #ffffff;
 }
 .header .dropdown .container {
@@ -165,33 +166,48 @@ button {
 .header .dropdown__menu {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   position: relative;
   width: 300px;
+  gap: 0;
 }
 .header .dropdown__menu li {
   padding: 0;
+  padding-bottom: 15px;
 }
-.header .dropdown__menu li:hover .next-dropdown__menu {
+.header .dropdown__menu li:last-child {
+  padding-bottom: 0;
+}
+.header .dropdown__menu li:hover {
+  font-weight: bold;
+}
+.header .dropdown__menu li:hover > ul {
+  visibility: visible;
+}
+.header .dropdown__menu li ul {
   height: auto;
-}
-.header .dropdown__menu li .next-dropdown__menu {
-  height: 0;
-  overflow: hidden;
-  width: 100%;
+  width: 400px;
   display: flex;
+  visibility: hidden;
   flex-direction: column;
-  padding-left: 50px;
+  padding-left: 100px;
   position: absolute;
   top: 0;
   left: 100%;
+  gap: 0;
 }
-.header .dropdown__menu li .next-dropdown__menu li:hover .last-dropdown__menu {
+.header .dropdown__menu li ul li a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 14px;
+}
+.header .dropdown__menu li ul li:hover .header .dropdown__menu li ul li > ul {
+  visibility: visible;
+}
+.header .dropdown__menu li ul li ul {
   height: auto;
-}
-.header .dropdown__menu li .next-dropdown__menu li .last-dropdown__menu {
-  height: 0;
-  overflow: hidden;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -206,7 +222,7 @@ button {
   line-height: 14px;
 }
 .header .dropdown__menu a:hover {
-  color: #F49719;
+  color: #f49719;
 }
 .header .dropdown__menu a:hover::before {
   display: none;
@@ -215,7 +231,7 @@ button {
   display: flex;
   gap: 15px;
   align-items: center;
-  color: #06293F;
+  color: #06293f;
 }
 .header__contacts__info {
   display: flex;
@@ -238,6 +254,11 @@ button {
   align-items: center;
 }
 
+@media (max-width: 1280px) {
+  .header__menu {
+    display: none;
+  }
+}
 .footer {
   background-color: #06293F;
   padding-top: 75px;
@@ -433,7 +454,7 @@ button {
   letter-spacing: -0.1px;
 }
 .category-menu__list ul li a:hover {
-  color: #F49719;
+  color: #f49719;
 }
 .category-menu__head {
   padding: 15px 39px 15px 30px;
@@ -443,7 +464,7 @@ button {
   display: flex;
   cursor: pointer;
   justify-content: space-between;
-  background-color: #072A40;
+  background-color: #072a40;
   gap: 18px;
 }
 .category-menu__head h2 {
@@ -464,7 +485,7 @@ button {
   position: absolute;
   height: 2px;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   bottom: 0;
 }
 .burger-btn:after {
@@ -474,20 +495,36 @@ button {
   height: 2px;
   width: 100%;
   top: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .burger-btn span {
   position: absolute;
   height: 2px;
   width: 100%;
   top: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 1px;
 }
 
+@media screen and (max-width: 1080px) {
+  .category-menu {
+    width: 100%;
+  }
+  .category-menu__head {
+    justify-content: unset;
+  }
+  .category-menu h2 {
+    margin: 0 auto;
+  }
+}
 .filled-btn {
   border-radius: 3px;
-  background: #072A40;
+  color: white;
+  transition: 0.2s all ease;
+  background: #072a40;
+}
+.filled-btn:hover {
+  background: #0a3b59;
 }
 
 .pd20 {
@@ -505,7 +542,8 @@ button {
   margin-top: 30px;
   margin-bottom: 50px;
 }
-.breadcrumbs span, .breadcrumbs a {
+.breadcrumbs span,
+.breadcrumbs a {
   color: #777;
   font-size: 14px;
   font-weight: 400;
@@ -513,8 +551,28 @@ button {
 }
 
 .outline-btn {
+  transition: 0.2s all ease;
   border-radius: 18px;
-  border: 1px solid #F49719;
+  border: 1px solid #f49719;
+}
+.outline-btn:hover {
+  background-color: #f49719;
+  color: white;
+}
+
+.counter {
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 50px;
+  border: 0.5px solid #979797;
+  opacity: 0.5;
+  border-radius: 3px;
+  justify-content: space-between;
+}
+.counter svg {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
