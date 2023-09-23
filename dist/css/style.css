@@ -1,9 +1,116 @@
+* {
+  font-family: "Rubik", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .header {
   margin: 0 auto;
   border-bottom: 0.5px solid rgba(151, 151, 151, 0.3);
 }
 .header__container {
-  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,16 +118,98 @@
 .header__socials {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 .header__menu ul {
   display: flex;
   gap: 15.5px;
 }
+.header__menu ul li {
+  padding: 27.5px 0;
+}
+.header__menu ul li:hover .dropdown {
+  height: auto;
+}
 .header__menu ul a {
   font-size: 15px;
+  padding: 27.5px 0;
+  position: relative;
   font-weight: 300;
   line-height: 16px;
   letter-spacing: -0.281px;
+}
+.header__menu ul a:hover::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #F49719;
+  position: absolute;
+  bottom: 0;
+}
+.header .dropdown {
+  position: absolute;
+  top: 75px;
+  height: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100vw;
+  background-color: #ffffff;
+}
+.header .dropdown .container {
+  position: relative;
+}
+.header .dropdown__inner {
+  padding: 40px 0;
+}
+.header .dropdown__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  width: 300px;
+}
+.header .dropdown__menu li {
+  padding: 0;
+}
+.header .dropdown__menu li:hover .next-dropdown__menu {
+  height: auto;
+}
+.header .dropdown__menu li .next-dropdown__menu {
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.header .dropdown__menu li .next-dropdown__menu li:hover .last-dropdown__menu {
+  height: auto;
+}
+.header .dropdown__menu li .next-dropdown__menu li .last-dropdown__menu {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header .dropdown__menu a {
+  padding: 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.header .dropdown__menu a:hover {
+  color: #F49719;
+}
+.header .dropdown__menu a:hover::before {
+  display: none;
 }
 .header__contacts {
   display: flex;
@@ -44,14 +233,22 @@
   line-height: 15px;
 }
 
+.socials__item {
+  display: flex;
+  align-items: center;
+}
+
 .footer {
   background-color: #06293F;
+  padding-top: 75px;
 }
 .footer__top {
-  padding-top: 75px;
   padding-bottom: 37px;
   display: flex;
   justify-content: space-between;
+}
+.footer__column {
+  width: calc(50% - 40px);
 }
 .footer__contacts__title {
   color: #fff;
@@ -107,11 +304,15 @@
   border: none;
   cursor: pointer;
 }
+.footer__map {
+  height: 100%;
+  width: 100%;
+}
 .footer__bottom {
   border-top: 1px solid #1E3E51;
 }
 .footer__bottom .container {
-  padding: 10px 0;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
 }
@@ -121,6 +322,7 @@
 .footer__menu ul {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .footer__menu ul li {
   opacity: 0.5;
@@ -150,6 +352,58 @@
   margin-left: 50px;
 }
 
+@media screen and (max-width: 920px) {
+  .footer {
+    padding-top: 40px;
+  }
+  .footer__top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer__info__item {
+    font-size: 18px;
+  }
+  .footer__column {
+    width: 100%;
+  }
+  .footer__contacts__title {
+    font-size: 32px;
+  }
+  .footer__schedule {
+    font-size: 20px;
+  }
+  .footer__map {
+    height: 450px;
+  }
+  .footer__btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__menu {
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footer__menu ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+  .rights {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .powered {
+    margin-left: 0;
+  }
+}
 .category-menu {
   border-radius: 10px;
   box-shadow: 0px 4px 8px 0px rgba(14, 31, 53, 0.08), 0px 1px 4px 0px rgba(14, 31, 53, 0.12);
@@ -160,7 +414,11 @@
 }
 .category-menu__list {
   height: 0;
+  overflow-y: scroll;
   transition: 0.3s height ease-in-out;
+}
+.category-menu__list::-webkit-scrollbar {
+  display: none;
 }
 .category-menu__list ul {
   display: flex;
@@ -183,6 +441,7 @@
   border-top-right-radius: 6px;
   align-items: center;
   display: flex;
+  cursor: pointer;
   justify-content: space-between;
   background-color: #072A40;
   gap: 18px;
@@ -226,30 +485,13 @@
   border-radius: 1px;
 }
 
-* {
-  font-family: "Rubik", sans-serif;
-  color: black;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+.filled-btn {
+  border-radius: 3px;
+  background: #072A40;
 }
 
 .pd20 {
   padding: 20px;
-}
-
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .title {
@@ -261,10 +503,22 @@ a {
 
 .breadcrumbs {
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 .breadcrumbs span, .breadcrumbs a {
   color: #777;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+}
+
+.outline-btn {
+  border-radius: 18px;
+  border: 1px solid #F49719;
+}
+
+@media screen and (max-width: 450px) {
+  .breadcrumbs {
+    margin-bottom: 25px;
+  }
 }

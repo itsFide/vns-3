@@ -4,30 +4,14 @@
 @import 'components/footer';
 @import 'components/media';
 @import 'components/aside';
-* {
-  font-family: 'Rubik', sans-serif;
-  color: black;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+.filled-btn {
+  border-radius: 3px;
+  background: #072A40;
 }
 
 .pd20 {
   padding: 20px;
-}
-
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .title {
@@ -39,10 +23,23 @@ a {
 
 .breadcrumbs {
   margin-top: 30px;
+  margin-bottom: 50px;
+
   span, a {
     color: #777;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
+  }
+}
+
+.outline-btn {
+  border-radius: 18px;
+  border: 1px solid #F49719;
+}
+
+@media screen and (max-width: 450px) {
+  .breadcrumbs {
+    margin-bottom: 25px;
   }
 }

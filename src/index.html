@@ -1,71 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>VNS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>ANS</title>
+    @@include('components/styles.html')
     <link rel="stylesheet" href="css/catalog.css">
 </head>
 <body>
 @@include('components/header.html')
-
-
 <main class="main">
     <section class="catalog">
         <div class="container">
             @@include('components/breadcrumbs.html')
             <div class="catalog__inner">
-                @@include('components/aside.html')
+                @@include('components/sidebar.html')
                 <div class="catalogs">
                     <h2 class="title catalog-title">Название каталога</h2>
                     <div class="catalog__items">
-                        <div class="catalogs__item">
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-1.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-2.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
-                        <div class="catalogs__item">
+                        </a>
+                        <a href="#" class="catalogs__item">
                             <img src="images/category-empty.png" alt="">
                             <h3>Видеокамеры</h3>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -75,4 +69,5 @@
 @@include('components/footer.html')
 </body>
 <script src="js/aside-dropdown.js"> </script>
+<script src="js/dropdown-menu.js"> </script>
 </html>

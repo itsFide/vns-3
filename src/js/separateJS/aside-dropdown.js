@@ -1,4 +1,4 @@
-const trigger = document.querySelector('.burger-btn')
+const trigger = document.querySelector('.category-menu__head')
 const menu = document.querySelector('.category-menu__list')
 const paddingClass = 'pd20'
 trigger.addEventListener('click', ()=> {

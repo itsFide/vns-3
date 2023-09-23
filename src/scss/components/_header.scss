@@ -1,47 +1,152 @@
 .header {
   margin: 0 auto;
   border-bottom: 0.5px solid rgba(151, 151, 151, 0.30);
+
   &__container {
-    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
   }
+
   &__socials {
     //margin-left: 15px;
     display: flex;
     gap: 12px;
+    align-items: center;
+
   }
+
   &__menu {
     //margin-left: 30px;
     //margin-right: 25px;
     ul {
       display: flex;
       gap: 15.5px;
+
+      li {
+        padding: 27.5px 0;
+
+        &:hover .dropdown {
+          height: auto;
+        }
+      }
+
       a {
         font-size: 15px;
+        padding: 27.5px 0;
+        position: relative;
         font-weight: 300;
         line-height: 16px;
         letter-spacing: -0.281px;
+
+        &:hover::before {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: #F49719;
+          position: absolute;
+          bottom: 0;
+        }
+
       }
     }
   }
+
+  .dropdown {
+    position: absolute;
+    top: 75px;
+    height: 0;
+
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #ffffff;
+    .container {
+      position: relative;
+    }
+    &__inner {
+      padding: 40px 0;
+    }
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+      width: 300px;
+      li {
+        padding: 0;
+        &:hover .next-dropdown__menu{
+          height: auto;
+        }
+        .next-dropdown__menu {
+          height: 0;
+          overflow: hidden;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding-left: 50px;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          li {
+            &:hover .last-dropdown__menu {
+              height: auto;
+
+            }
+            .last-dropdown__menu {
+              height: 0;
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+
+      a {
+        padding: 0;
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 14px;
+
+        &:hover {
+          color: #F49719;
+        }
+
+        &:hover::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+
+
   &__contacts {
     display: flex;
     gap: 15px;
     align-items: center;
     color: #06293F;
+
     &__info {
       display: flex;
       flex-direction: column;
       gap: 2px;
     }
+
     &__phone {
       font-size: 16px;
       font-weight: 700;
       line-height: 16px;
     }
+
     &__status {
       font-size: 15px;
       font-weight: 300;
@@ -50,3 +155,10 @@
   }
 
 }
+
+.socials__item {
+  display: flex;
+  align-items: center;
+}
+
+

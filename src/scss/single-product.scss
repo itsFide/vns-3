@@ -1,0 +1,157 @@
+.product {
+  padding-bottom: 100px;
+  h4 {
+    color: #111;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    opacity: 0.8;
+    padding: 20px 0px;
+    border-bottom: 0.5px solid rgba(151, 151, 151, 0.49);
+  }
+  &__characteristics {
+    width: 50%;
+    h4 {
+      padding-left: 20px;
+    }
+  }
+
+  &__table {
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 3px;
+    border-collapse: collapse;
+    border: 1px solid #B3B3B3;
+    td {
+      padding: 13px 20px;
+      color: #000;
+      border: 1px solid #B3B3B3;
+      font-size: 16px;
+      font-style: normal;
+
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+  &__inner {
+  }
+
+  &__descr {
+    width: 50%;
+
+    &__items {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+
+    &__item {
+      span {
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px
+      }
+
+      p {
+        margin-top: 40px;
+        opacity: 0.8;
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+      }
+    }
+
+
+  }
+
+  &__top {
+    gap: 20px;
+    display: flex;
+  }
+
+  &__images {
+    width: 50%;
+  }
+
+  &__image {
+  }
+
+  &__info {
+    h2 {
+      color: #111;
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+
+    p {
+      width: 60%;
+      color: #000;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+
+  &__name {
+  }
+
+  &__article {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    display: flex;
+  }
+}
+
+.mySwiper2 {
+  margin-bottom: 20px;
+
+  .product__image {
+    height: 350px;
+    width: 530px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}
+
+.mySwiper {
+  .product__image {
+    height: 85px;
+    width: 130px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.add-product-btn {
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 35px;
+  line-height: 16px;
+}
+
