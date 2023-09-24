@@ -15,18 +15,42 @@
     transition: 0.3s height ease-in-out;
     ul {
       display: flex;
+      transition: 0.3s all ease;
       flex-direction: column;
-      gap: 10px;
-      li {
-        a {
+      gap: 15px;
+      & > li {
+        &:hover {
+          color: var(--accent-color);
+        }
+        user-select: none;
+        & > p {
           color: #000;
           font-size: 14px;
-          font-weight: 700;
+          font-weight: 500;
           line-height: 14px;
           letter-spacing: -0.1px;
+          margin-block-start: 0;
+          margin-block-end: 0;
           &:hover {
-            color: #f49719;
+            color: var(--accent-color);
           }
+        }
+        & > ul {
+          margin-top: 15px;
+          display: none;
+          & > li {
+            margin-bottom: 10px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        & > ul > li > a {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px;
+          opacity: 0.6;
         }
       }
     }

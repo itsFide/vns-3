@@ -62,6 +62,19 @@
 .modal__counter {
   width: 100px;
   gap: 25px;
+  border-radius: 3px;
+  border: 0.5px solid rgba(151, 151, 151, 0.4588235294);
+  opacity: 1;
+}
+.modal__counter span {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.modal__counter svg path {
+  width: 10px;
 }
 .modal__actions {
   display: flex;
@@ -128,7 +141,7 @@
 }
 .product__item__cart-btn {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
@@ -140,7 +153,7 @@
   flex-direction: column;
   align-items: center;
 }
-.product__item__download-link span {
+.product__item__download-link p {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

@@ -29,10 +29,11 @@
   align-items: center;
   gap: 20px;
 }
-.cart__empty-block span {
+.cart__empty-block p {
   color: #000;
   font-size: 16px;
   font-weight: 400;
+  opacity: 0.8;
   line-height: 25px;
 }
 .cart__items {
@@ -95,4 +96,6 @@
 }
 .cart__item__close {
   width: 40px;
+  display: flex;
+  align-items: start;
 }

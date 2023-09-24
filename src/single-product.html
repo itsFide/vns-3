@@ -10,7 +10,7 @@
     />
   </head>
   <body>
-    @@include('components/header.html')
+    @@include('components/overlay.html') @@include('components/header.html')
     <main class="main">
       <section class="product">
         <div class="container">
@@ -80,10 +80,10 @@
                 <h4>Описание</h4>
                 <div class="product__descr__items">
                   <div class="product__descr__item">
-                    <span
-                      >Кодирование видеопотока стандартом сжатия MJPEG, без
-                      ограничений.</span
-                    >
+                    <h3>
+                      Кодирование видеопотока стандартом сжатия MJPEG, без
+                      ограничений.
+                    </h3>
                     <p>
                       Сжатие видео потока кодеком MJPEG в максимальном
                       разрешении без ограничения по битрейту позволяет получить
@@ -94,7 +94,7 @@
                     </p>
                   </div>
                   <div class="product__descr__item">
-                    <span>Настройка среднего уровня яркости.</span>
+                    <h3>Настройка среднего уровня яркости.</h3>
                     <p>
                       При использовании видеоаналитики, например “Трекер
                       объекта”, поиск объекта по цвету, очень важной
@@ -105,7 +105,7 @@
                     </p>
                   </div>
                   <div class="product__descr__item">
-                    <span>Технология Zeroconf.</span>
+                    <h3>Технология Zeroconf.</h3>
                     <p>
                       Это набор технологий, которые автоматически создают
                       IP-сеть без конфигурации или специальных серверов. В том
@@ -140,4 +140,5 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
+  @@include('components/footer-imports.html')
 </html>

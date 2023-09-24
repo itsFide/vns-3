@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ANS</title>
+    @@include('components/styles.html')
+    <link rel="stylesheet" href="css/single-project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    @@include('components/overlay.html') @@include('components/header.html')
+    <main class="main">
+      <section class="project">
+        <div class="container">
+          @@include('components/breadcrumbs.html')
+          <div class="project__inner">
+            <div class="project__images">
+              <div class="swiper project__big-image">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper project__mini-images">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                  <div class="swiper-slide project__image">
+                    <img src="images/product-empty.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project__info">
+              <h2 class="project__title">Название проекта</h2>
+              <div class="project__text">
+                <p>
+                  Сжатие видео потока кодеком MJPEG в максимальном разрешении
+                  без ограничения по битрейту позволяет получить полноразмерные
+                  стоп-кадры без потери качества для распознавания и
+                  идентификации объектов. MJPEG предъявляет минимальные
+                  требования к вычислительным ресурсам системы, что уменьшает
+                  нагрузку на сервер и серверное ПО. При использовании
+                  видеоаналитики, например “Трекер объекта”, поиск объекта по
+                  цвету, очень важной составляющей является цветопередача
+                  видеоизображения. В IP-камерах Rubezh настройка среднего
+                  уровня яркости позволяет получить более естественную
+                  цветопередачу по сравнению с IP-камерами, где такой функции
+                  нет.
+                </p>
+                <p>
+                  При использовании видеоаналитики, например “Трекер объекта”,
+                  поиск объекта по цвету, очень важной составляющей является
+                  цветопередача видеоизображения. В IP-камерах Rubezh настройка
+                  среднего уровня яркости позволяет получить более естественную
+                  цветопередачу по сравнению с IP-камерами, где такой функции
+                  нет.
+                </p>
+                <p>
+                  При использовании видеоаналитики, например “Трекер объекта”,
+                  поиск объекта по цвету, очень важной составляющей является
+                  цветопередача видеоизображения. В IP-камерах Rubezh настройка
+                  среднего уровня яркости позволяет получить более естественную
+                  цветопередачу по сравнению с IP-камерами, где такой функции
+                  нет.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('components/footer.html')
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/project-swiper.js"></script>
+  @@include('components/footer-imports.html')
+</html>

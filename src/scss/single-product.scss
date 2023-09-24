@@ -23,19 +23,17 @@
     margin-top: 20px;
     border-radius: 3px;
     border-collapse: collapse;
-    border: 1px solid #B3B3B3;
+    border: 1px solid #b3b3b3;
     td {
       padding: 13px 20px;
       color: #000;
-      border: 1px solid #B3B3B3;
+      border: 1px solid #b3b3b3;
       font-size: 16px;
       font-style: normal;
-
+      opacity: 0.8;
       font-weight: 400;
       line-height: 25px;
     }
-  }
-  &__inner {
   }
 
   &__descr {
@@ -49,11 +47,11 @@
     }
 
     &__item {
-      span {
+      h3 {
         color: #000;
         font-size: 16px;
         font-weight: 700;
-        line-height: 25px
+        line-height: 25px;
       }
 
       p {
@@ -65,8 +63,6 @@
         line-height: 25px;
       }
     }
-
-
   }
 
   &__top {
@@ -79,6 +75,7 @@
   }
 
   &__image {
+    cursor: pointer;
   }
 
   &__info {
@@ -98,9 +95,6 @@
       font-weight: 400;
       line-height: 25px;
     }
-  }
-
-  &__name {
   }
 
   &__article {
@@ -130,7 +124,6 @@
       object-fit: cover;
     }
   }
-
 }
 
 .mySwiper {
@@ -148,10 +141,9 @@
 
 .add-product-btn {
   padding: 15px 25px;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: 300;
   margin-top: 35px;
   line-height: 16px;
 }
-

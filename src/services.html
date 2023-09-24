@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/service.css" />
   </head>
   <body>
-    @@include('components/header.html')
+    @@include('components/overlay.html') @@include('components/header.html')
     <main class="main">
-      <section class="service">
+      <section class="hero">
         <div
           class="parallax"
           style="background: url('images/service_parallax.png')"
@@ -30,6 +30,8 @@
             </p>
           </div>
         </div>
+      </section>
+      <section class="service">
         <div class="container">
           <div class="service__items">
             <a href="#" class="service__item">
@@ -66,4 +68,5 @@
     </main>
     @@include('components/footer.html')
   </body>
+  @@include('components/footer-imports.html')
 </html>
