@@ -3,14 +3,7 @@ const menu = document.querySelector(".category-menu__list");
 const menuItems = menu.querySelectorAll(".category-menu__list li");
 const paddingClass = "pd20";
 trigger.addEventListener("click", () => {
-  menu.style.height = menu.style.height === "" ? `${menu.scrollHeight}px` : "";
-  if (menu.classList.contains(paddingClass)) {
-    setTimeout(() => {
-      menu.classList.remove(paddingClass);
-    }, 300);
-  } else {
-    menu.classList.add(paddingClass);
-  }
+  menu.style.maxHeight = menu.style.maxHeight ? null : `${menu.scrollHeight}px`;
 });
 
 menuItems.forEach((menuItem) => {

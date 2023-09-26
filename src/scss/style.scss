@@ -5,6 +5,13 @@
 @import "components/media";
 @import "components/aside";
 
+svg {
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
 .overlay {
   position: absolute;
   top: 75px;
@@ -14,14 +21,6 @@
   bottom: 0;
   display: none;
   background-color: rgba($color: #000000, $alpha: 0.5);
-}
-
-.overlay--enabled {
-  display: block;
-}
-
-.body--fixed {
-  overflow-y: hidden;
 }
 
 .filled-btn {
@@ -34,10 +33,6 @@
   }
 }
 
-.pd20 {
-  padding: 20px;
-}
-
 .title {
   color: #111;
   font-size: 30px;
@@ -45,8 +40,16 @@
   line-height: 30px;
 }
 
+.under-text {
+  & p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
 .breadcrumbs {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 50px;
 
   span,
@@ -87,4 +90,12 @@
   .breadcrumbs {
     margin-bottom: 25px;
   }
+}
+
+.overlay--enabled {
+  display: block;
+}
+
+.body--fixed {
+  overflow-y: hidden;
 }

@@ -1,0 +1,83 @@
+.brands-filter {
+  margin-top: 30px;
+  &__head {
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 15px 20px;
+    border-radius: 3px;
+    background-color: rgba($color: #072a40, $alpha: 0.1);
+    h3 {
+      color: #1b3768;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+    svg {
+      transition: all 0.3s;
+    }
+  }
+
+  &__select-form {
+    overflow-y: hidden;
+    transition: 0.3s all ease;
+    max-height: 0;
+  }
+
+  &__items {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      border: 1px solid #e6e8ed;
+      background: #fff;
+      &:checked {
+        background: url("../images/checked.svg");
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__show-btn,
+  &__reset-btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+
+  &__reset-btn {
+    background-color: rgba($color: #072a40, $alpha: 0.1);
+    &:hover {
+      background-color: rgba($color: #072a40, $alpha: 0.2);
+    }
+  }
+}

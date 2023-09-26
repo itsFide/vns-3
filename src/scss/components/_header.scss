@@ -17,6 +17,18 @@
     right: 0;
     top: 75px;
     background-color: #ffffff;
+    &__cart {
+      align-items: center;
+      svg {
+        height: 30px;
+        width: 30px;
+      }
+    }
+    &__actions {
+      display: none;
+      gap: 20px;
+      align-items: center;
+    }
     &__inner {
       overflow-y: scroll;
       display: flex;
@@ -122,10 +134,12 @@
   &__menu {
     & ul {
       display: flex;
-      gap: 15.5px;
-
       & li {
         padding: 27.5px 0;
+        padding-right: 15.5px;
+        &:last-child {
+          padding-right: 0;
+        }
         &:hover .dropdown {
           visibility: visible;
         }
@@ -138,14 +152,18 @@
         font-weight: 300;
         line-height: 16px;
         letter-spacing: -0.281px;
-
-        &:hover::before {
+        &::before {
           content: "";
           width: 100%;
           height: 2px;
+          transition: 0.3s all ease;
           background-color: var(--accent-color);
           position: absolute;
           bottom: 0;
+          opacity: 0;
+        }
+        &:hover::before {
+          opacity: 1;
         }
       }
     }
@@ -279,6 +297,11 @@
     }
     &__mobile-menu {
       position: absolute;
+    }
+    &__mobile {
+      &__actions {
+        display: flex;
+      }
     }
     &__burger-btn {
       display: flex;

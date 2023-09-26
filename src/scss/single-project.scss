@@ -68,3 +68,71 @@
     }
   }
 }
+
+@media screen and (max-width: 980px) {
+  .project {
+    &__images {
+      width: 40%;
+      & .project__big-image {
+        & .project__image {
+          height: 250px;
+        }
+      }
+      & .project__mini-images {
+        & .project__image {
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .project {
+    &__inner {
+      flex-direction: column;
+    }
+    &__images {
+      width: 100%;
+      & .project__big-image {
+        & .project__image {
+          height: 400px;
+        }
+      }
+      & .project__mini-images {
+        & .project__image {
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project {
+    &__images {
+      & .project__big-image {
+        & .project__image {
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .project {
+    &__images {
+      & .project__big-image {
+        & .project__image {
+          height: 200px;
+        }
+      }
+      & .project__mini-images {
+        & .project__image {
+          height: 120px;
+        }
+      }
+    }
+  }
+}

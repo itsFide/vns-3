@@ -1,11 +1,12 @@
 :root {
   --accent-color: #f49719;
   --icons-color: #f49719;
+  --primary-font-color: #111;
 }
 
 * {
   font-family: "Rubik", sans-serif;
-  color: black;
+  color: var(--primary-font-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -159,6 +160,18 @@ body {
 .header__mobile::-webkit-scrollbar {
   display: none;
 }
+.header__mobile__cart {
+  align-items: center;
+}
+.header__mobile__cart svg {
+  height: 30px;
+  width: 30px;
+}
+.header__mobile__actions {
+  display: none;
+  gap: 20px;
+  align-items: center;
+}
 .header__mobile__inner {
   overflow-y: scroll;
   display: flex;
@@ -254,10 +267,13 @@ body {
 }
 .header__menu ul {
   display: flex;
-  gap: 15.5px;
 }
 .header__menu ul li {
   padding: 27.5px 0;
+  padding-right: 15.5px;
+}
+.header__menu ul li:last-child {
+  padding-right: 0;
 }
 .header__menu ul li:hover .dropdown {
   visibility: visible;
@@ -270,13 +286,18 @@ body {
   line-height: 16px;
   letter-spacing: -0.281px;
 }
-.header__menu ul a:hover::before {
+.header__menu ul a::before {
   content: "";
   width: 100%;
   height: 2px;
+  transition: 0.3s all ease;
   background-color: var(--accent-color);
   position: absolute;
   bottom: 0;
+  opacity: 0;
+}
+.header__menu ul a:hover::before {
+  opacity: 1;
 }
 .header .dropdown {
   width: 100vw;
@@ -393,6 +414,9 @@ body {
   }
   .header__mobile-menu {
     position: absolute;
+  }
+  .header__mobile__actions {
+    display: flex;
   }
   .header__burger-btn {
     display: flex;
@@ -520,7 +544,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 30px;
-  max-width: 75%;
+  max-width: 70%;
   display: block;
 }
 .footer__info {
@@ -559,11 +583,15 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
+}
+.footer__btn:hover {
+  background-color: rgb(23, 23, 23);
 }
 .footer__map {
+  height: 100%;
+  width: 100%;
+}
+.footer__map iframe {
   height: 100%;
   width: 100%;
 }
@@ -583,16 +611,16 @@ body {
   gap: 20px;
   flex-wrap: wrap;
 }
-.footer__menu ul li {
-  opacity: 0.5;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 16px; /* 114.286% */
+.footer__menu ul li:hover a {
+  color: rgba(255, 255, 255, 0.3);
 }
 .footer__menu ul li a {
-  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  transition: all 0.3s;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .rights,
@@ -664,29 +692,34 @@ body {
     margin-left: 0;
   }
 }
+aside {
+  width: 200px;
+  flex-shrink: 0;
+}
+
 .category-menu {
   border-radius: 10px;
   box-shadow: 0px 4px 8px 0px rgba(14, 31, 53, 0.08), 0px 1px 4px 0px rgba(14, 31, 53, 0.12);
-  height: 100%;
-  flex-shrink: 0;
-  width: 200px;
+  width: 100%;
   overflow-y: hidden;
 }
 .category-menu__list {
-  height: 0;
+  max-height: 0;
   overflow-y: scroll;
-  transition: 0.3s height ease-in-out;
+  transition: 0.3s max-height ease-in-out;
 }
 .category-menu__list::-webkit-scrollbar {
   display: none;
 }
 .category-menu__list ul {
+  margin-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   transition: 0.3s all ease;
   flex-direction: column;
-  gap: 15px;
 }
 .category-menu__list ul > li {
+  padding: 8px 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -711,6 +744,8 @@ body {
   display: none;
 }
 .category-menu__list ul > li > ul > li {
+  padding: 0;
+  padding-left: 5px;
   margin-bottom: 10px;
 }
 .category-menu__list ul > li > ul > li:last-child {
@@ -774,7 +809,7 @@ body {
 }
 
 @media screen and (max-width: 1080px) {
-  .category-menu {
+  aside {
     width: 100%;
   }
   .category-menu__head {
@@ -784,6 +819,13 @@ body {
     margin: 0 auto;
   }
 }
+svg {
+  transition: all 0.3s;
+}
+svg:hover {
+  opacity: 0.5;
+}
+
 .overlay {
   position: absolute;
   top: 75px;
@@ -793,14 +835,6 @@ body {
   bottom: 0;
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.overlay--enabled {
-  display: block;
-}
-
-.body--fixed {
-  overflow-y: hidden;
 }
 
 .filled-btn {
@@ -813,10 +847,6 @@ body {
   background: #0a3b59;
 }
 
-.pd20 {
-  padding: 20px;
-}
-
 .title {
   color: #111;
   font-size: 30px;
@@ -824,8 +854,14 @@ body {
   line-height: 30px;
 }
 
+.under-text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .breadcrumbs {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 50px;
 }
 .breadcrumbs span,
@@ -865,4 +901,11 @@ body {
   .breadcrumbs {
     margin-bottom: 25px;
   }
+}
+.overlay--enabled {
+  display: block;
+}
+
+.body--fixed {
+  overflow-y: hidden;
 }

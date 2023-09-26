@@ -1,18 +1,23 @@
 .service {
-  padding-bottom: 160px;
+  padding-bottom: 100px;
   &__items {
     display: flex;
     gap: 75px 20px;
     flex-wrap: wrap;
   }
   &__item {
-    width: calc(100% / 3 - 20px);
-    img {
+    width: calc(100% / 3 - 15px);
+    &__image {
       height: 250px;
       width: 100%;
-      object-fit: cover;
       margin-bottom: 20px;
+      & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
+
     &__title {
       color: #19191a;
       font-size: 20px;

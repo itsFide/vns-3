@@ -33,6 +33,9 @@
 .catalog__item__column > ul > li {
   margin-bottom: 8px;
 }
+.catalog__item__column > ul > li:hover > a {
+  color: var(--accent-color);
+}
 .catalog__item__column > ul > li > a {
   color: #777;
   font-size: 14px;
@@ -41,4 +44,13 @@
 }
 .catalog__item__column > ul > li:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 680px) {
+  .catalog__items {
+    gap: 30px;
+  }
+  .catalog__item {
+    width: 100%;
+  }
 }

@@ -1,5 +1,5 @@
 .service {
-  padding-bottom: 160px;
+  padding-bottom: 100px;
 }
 .service__items {
   display: flex;
@@ -7,14 +7,18 @@
   flex-wrap: wrap;
 }
 .service__item {
-  width: calc(33.3333333333% - 20px);
+  width: calc(33.3333333333% - 15px);
 }
-.service__item img {
+.service__item__image {
   height: 250px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.service__item__image img {
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 20px;
 }
 .service__item__title {
   color: #19191a;

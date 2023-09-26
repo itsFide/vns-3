@@ -1,0 +1,35 @@
+.pagination {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  &__btn {
+    border-radius: 3px;
+    border: 1px solid rgba(27, 55, 104, 0.7);
+    background: rgba(27, 55, 104, 0.05);
+    padding: 14px 18px;
+    color: #1b3768;
+    font-size: 14px;
+    font-style: normal;
+    transition: 0.3s all ease;
+    font-weight: 400;
+    line-height: normal;
+    &:hover {
+      background: #1b3768;
+      color: white;
+    }
+  }
+  &__next,
+  &__prev {
+    display: flex;
+    align-items: center;
+  }
+  &__pages {
+    display: flex;
+    gap: 15px;
+  }
+  .selected {
+    background: #1b3768;
+    color: white;
+  }
+}

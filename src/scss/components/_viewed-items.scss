@@ -33,59 +33,5 @@
 .viewed-slider {
   .viewed-products__item {
     min-height: 285px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 0.5px solid #e6e9eb;
-    &:hover {
-      .viewed-products__item__cart-btn {
-        opacity: 1;
-      }
-      .viewed-products__item__cart-overlay {
-        opacity: 1;
-      }
-    }
-    & > h3 {
-      padding: 30px 5px;
-      text-align: center;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22px;
-    }
-    &__cart-overlay {
-      transition: 0.2s all ease;
-      position: absolute;
-      opacity: 0;
-      z-index: 1;
-      background-color: rgba($color: #000000, $alpha: 0.2);
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-    &__cart-btn {
-      z-index: 2;
-      transition: 0.3s all ease;
-      position: absolute;
-      height: 35px;
-      width: 35px;
-      opacity: 0;
-      padding: 5px;
-      background-color: white;
-      border-radius: 2px;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    &__image {
-      border-radius: 4px;
-      position: relative;
-      height: 200px;
-      width: 100%;
-      & > img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
   }
 }

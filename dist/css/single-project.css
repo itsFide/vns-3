@@ -61,3 +61,42 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media screen and (max-width: 980px) {
+  .project__images {
+    width: 40%;
+  }
+  .project__images .project__big-image .project__image {
+    height: 250px;
+  }
+  .project__images .project__mini-images .project__image {
+    height: 90px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .project__inner {
+    flex-direction: column;
+  }
+  .project__images {
+    width: 100%;
+  }
+  .project__images .project__big-image .project__image {
+    height: 400px;
+  }
+  .project__images .project__mini-images .project__image {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .project__images .project__big-image .project__image {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .project__images .project__big-image .project__image {
+    height: 200px;
+  }
+  .project__images .project__mini-images .project__image {
+    height: 120px;
+  }
+}
