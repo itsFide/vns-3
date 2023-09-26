@@ -7,8 +7,7 @@ trigger.addEventListener("click", () => {
 });
 
 menuItems.forEach((menuItem) => {
-  menuItem.addEventListener("click", (e) => {
-    e.preventDefault();
+  menuItem.addEventListener("click", () => {
     const menuList = menuItem.getElementsByTagName("ul")[0];
     if (menuList) {
       menuList.style.display =
