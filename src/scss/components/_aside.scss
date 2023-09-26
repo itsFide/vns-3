@@ -24,7 +24,7 @@ aside {
       flex-direction: column;
       & > li {
         padding: 8px 20px;
-
+        cursor: pointer;
         &:hover {
           color: var(--accent-color);
         }
@@ -50,6 +50,11 @@ aside {
             margin-bottom: 10px;
             &:last-child {
               margin-bottom: 0;
+            }
+            &:hover {
+              & > a {
+                color: var(--accent-color);
+              }
             }
           }
         }

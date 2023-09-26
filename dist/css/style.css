@@ -720,6 +720,7 @@ aside {
 }
 .category-menu__list ul > li {
   padding: 8px 20px;
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -750,6 +751,9 @@ aside {
 }
 .category-menu__list ul > li > ul > li:last-child {
   margin-bottom: 0;
+}
+.category-menu__list ul > li > ul > li:hover > a {
+  color: var(--accent-color);
 }
 .category-menu__list ul > li > ul > li > a {
   font-size: 14px;

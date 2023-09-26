@@ -15,7 +15,7 @@
   }
 
   & .viewed-products__slider-button-prev {
-    background: url("/images/slider-prev.svg");
+    background: url("../images/slider-prev.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -24,7 +24,7 @@
   & .viewed-products__slider-button-next {
     right: -60px;
     cursor: pointer;
-    background: url("/images/slider-next.svg");
+    background: url("../images/slider-next.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
