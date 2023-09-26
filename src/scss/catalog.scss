@@ -75,6 +75,16 @@
   }
 }
 
+@media screen and (max-width: 780px) {
+  .catalog {
+    padding-bottom: 50px;
+    &__title {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 620px) {
   .catalogs {
     &__item {
@@ -84,11 +94,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .catalog {
-    padding-bottom: 75px;
-  }
-  .catalog-title {
-    font-size: 26px;
+  .catalog__title {
+    font-size: 24px;
   }
   .category-menu__head {
     h2 {

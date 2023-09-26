@@ -74,25 +74,32 @@
     padding: 50px 0 80px 0;
   }
   .service {
+    &__items {
+      justify-content: center;
+    }
     &__item {
       width: calc(100% / 2 - 20px);
     }
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
   .parallax {
     padding: 30px 0 50px 0;
     .service__title {
       font-size: 26px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     p {
       font-size: 14px;
-      width: 70%;
+      width: 100%;
     }
   }
   .service {
+    padding-bottom: 50px;
+    &__items {
+      row-gap: 20px;
+    }
     &__item {
       width: calc(100% / 2 - 20px);
     }
@@ -100,20 +107,20 @@
 }
 
 @media screen and (max-width: 480px) {
+  .parallax {
+    .service__title {
+      font-size: 24px;
+    }
+  }
   .service {
-    padding-bottom: 50px;
     &__item {
       width: 100%;
+      &__image {
+        height: 250px;
+      }
     }
     &__items {
       gap: 30px;
-    }
-  }
-  .parallax {
-    padding: 30px 0 50px 0;
-    p {
-      font-size: 14px;
-      width: 100%;
     }
   }
 }

@@ -69,41 +69,46 @@
   .parallax {
     padding: 50px 0 80px 0;
   }
+  .service__items {
+    justify-content: center;
+  }
   .service__item {
     width: calc(50% - 20px);
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
   .parallax {
     padding: 30px 0 50px 0;
   }
   .parallax .service__title {
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .parallax p {
     font-size: 14px;
-    width: 70%;
+    width: 100%;
+  }
+  .service {
+    padding-bottom: 50px;
+  }
+  .service__items {
+    row-gap: 20px;
   }
   .service__item {
     width: calc(50% - 20px);
   }
 }
 @media screen and (max-width: 480px) {
-  .service {
-    padding-bottom: 50px;
+  .parallax .service__title {
+    font-size: 24px;
   }
   .service__item {
     width: 100%;
   }
+  .service__item__image {
+    height: 250px;
+  }
   .service__items {
     gap: 30px;
-  }
-  .parallax {
-    padding: 30px 0 50px 0;
-  }
-  .parallax p {
-    font-size: 14px;
-    width: 100%;
   }
 }

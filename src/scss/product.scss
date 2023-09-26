@@ -113,12 +113,13 @@
 }
 @media screen and (max-width: 780px) {
   .product {
+    padding-bottom: 50px;
     &__item {
       width: 100%;
     }
     &__title {
       font-size: 26px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     &__text {
       font-size: 14px;
@@ -128,10 +129,17 @@
 }
 @media screen and (max-width: 480px) {
   .product {
+    &__pagination {
+      margin-bottom: 20px;
+    }
+    &__items {
+      margin-bottom: 20px;
+    }
     &__item {
       flex-direction: column;
       max-height: unset;
       &__image {
+        height: 250px;
         width: 100%;
       }
     }

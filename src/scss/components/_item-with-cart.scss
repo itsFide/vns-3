@@ -16,7 +16,10 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-    padding: 30px 5px;
+    & > a {
+      display: block;
+      padding: 30px 5px;
+    }
   }
   &__cart-btn {
     z-index: 4;

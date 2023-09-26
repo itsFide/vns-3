@@ -152,6 +152,14 @@
 @media screen and (max-width: 620px) {
   .modal {
     &__top {
+      margin-bottom: 20px;
+      gap: 20px;
+      & .modal__product-name {
+        margin-bottom: 5px;
+      }
+      & .modal__product-text {
+        margin-bottom: 15px;
+      }
       & .modal__product-image {
         height: 300px;
       }

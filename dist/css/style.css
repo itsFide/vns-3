@@ -162,6 +162,9 @@ body {
 .header__mobile::-webkit-scrollbar {
   display: none;
 }
+.header__mobile__bottom {
+  padding-bottom: 30px;
+}
 .header__mobile__cart {
   align-items: center;
 }
@@ -857,7 +860,7 @@ svg:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .breadcrumbs {
     margin-bottom: 25px;
   }

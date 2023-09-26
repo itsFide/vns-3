@@ -74,12 +74,20 @@
 }
 
 @media screen and (max-width: 780px) {
+  .category {
+    padding-bottom: 50px;
+  }
   .categories {
     &__title {
       font-size: 26px;
     }
     &__item {
       width: calc(100% / 3 - 20px);
+    }
+    &__text {
+      & p {
+        margin-bottom: 10px;
+      }
     }
   }
 }
@@ -96,6 +104,12 @@
   .categories {
     &__item {
       width: 100%;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      margin-bottom: 25px;
     }
   }
 }
