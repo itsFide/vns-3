@@ -21,13 +21,11 @@
   width: calc(50% - 10px);
 }
 .categories__item__title {
+  margin-bottom: 20px;
   width: 95%;
-  color: #111;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  margin-bottom: 20px;
 }
 .categories__item__block {
   display: flex;
@@ -51,17 +49,13 @@
   padding: 20px;
 }
 .categories__item__info h4 {
-  color: #000;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
-  margin-bottom: 10px;
 }
 .categories__item__info p {
-  color: #000;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 15px;
   opacity: 0.8;
 }

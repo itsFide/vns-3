@@ -9,9 +9,7 @@
   margin-bottom: 20px;
 }
 .cart__text {
-  color: #000;
   font-size: 16px;
-  font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.2px;
   opacity: 0.8;
@@ -30,9 +28,7 @@
   gap: 20px;
 }
 .cart__empty-block p {
-  color: #000;
   font-size: 16px;
-  font-weight: 400;
   opacity: 0.8;
   line-height: 25px;
 }
@@ -94,7 +90,6 @@
      object-fit: cover;
 }
 .cart__item__info h3 {
-  color: #000;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
@@ -102,7 +97,6 @@
 }
 .cart__item__info p {
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   opacity: 0.8;
   max-width: 90%;

@@ -21,8 +21,6 @@
 .single-news__links p {
   color: #777;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 14px;
 }
 .single-news__share {
@@ -46,9 +44,7 @@
   gap: 30px;
 }
 .single-news__text p {
-  color: #000;
   font-size: 16px;
-  font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.2px;
   opacity: 0.8;

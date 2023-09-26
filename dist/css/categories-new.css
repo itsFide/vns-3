@@ -33,6 +33,11 @@
   min-height: 285px;
 }
 
+@media screen and (max-width: 480px) {
+  .viewed-products__item .item-with-cart__image {
+    height: auto;
+  }
+}
 .brands-filter {
   margin-top: 30px;
 }
@@ -181,7 +186,6 @@
 .categories__title {
   margin-bottom: 30px;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
   line-height: 30px;
 }
@@ -205,8 +209,6 @@
 .categories__item h3 {
   text-align: center;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 14px;
   letter-spacing: -0.2px;
 }

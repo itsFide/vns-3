@@ -35,3 +35,13 @@
     min-height: 285px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .viewed-products {
+    &__item {
+      & .item-with-cart__image {
+        height: auto;
+      }
+    }
+  }
+}

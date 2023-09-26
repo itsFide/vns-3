@@ -42,9 +42,6 @@
         justify-content: space-between;
       }
     }
-    &__bottom {
-      padding: 30px 0;
-    }
     &__socials {
       display: flex;
       flex-direction: row;
@@ -65,6 +62,7 @@
     & nav {
       & > ul {
         & li {
+          line-height: 25px;
           &:hover > p {
             font-weight: bold;
             color: var(--accent-color);
@@ -74,40 +72,33 @@
           }
         }
         & > li {
-          padding-bottom: 20px;
-          & > p {
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 16px;
-            letter-spacing: -0.281px;
-          }
+          padding-bottom: 35px;
+          font-size: 22px;
+          font-weight: 400;
+
           & ul {
             display: none;
-            padding-left: 30px;
+            padding-left: 20px;
           }
           & > ul {
             margin-top: 15px;
             & > li {
-              padding-bottom: 10px;
-              & > p {
-                font-size: 18px;
-              }
+              padding-bottom: 15px;
+              font-weight: 300;
+              font-size: 20px;
               & > ul {
                 margin-top: 10px;
                 & > li {
                   padding-bottom: 10px;
-                  & > p {
-                    font-size: 16px;
-                    opacity: 0.8;
-                  }
+                  font-size: 18px;
+                  opacity: 0.8;
                   & > ul {
                     margin-top: 10px;
                     & > li {
                       padding-bottom: 5px;
                       & > a {
-                        font-size: 14px;
-                        opacity: 0.5;
+                        font-size: 16px;
+                        opacity: 0.7;
                       }
                     }
                   }
@@ -342,64 +333,13 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .header {
-    &__mobile {
-      &__inner {
-        padding: 15px 0;
-      }
-      & nav {
-        & > ul {
-          & > li {
-            padding-bottom: 15px;
-            & > p {
-              font-size: 18px;
-            }
-            & ul {
-              padding-left: 15px;
-            }
-            & > ul {
-              margin-top: 15px;
-              & > li {
-                padding-bottom: 10px;
-                & > p {
-                  font-size: 16px;
-                }
-                & > ul {
-                  margin-top: 10px;
-                  & > li {
-                    padding-bottom: 10px;
-                    & > p {
-                      font-size: 14px;
-                    }
-                    & > ul {
-                      margin-top: 10px;
-                      & > li {
-                        padding-bottom: 5px;
-                        & > a {
-                          font-size: 12px;
-                          opacity: 0.5;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 .socials__item {
   display: flex;
   align-items: center;
 }
 
 .mobile-menu--active {
-  height: calc(100vh - 75px);
+  height: calc(100 * var(--vh) - 75px);
   overflow-y: scroll;
 }
 .burger--open {

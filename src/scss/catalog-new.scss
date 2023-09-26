@@ -32,16 +32,14 @@
         max-width: 70px;
       }
       & > ul > li {
+        color: #777;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
         &:hover {
           & > a {
             color: var(--accent-color);
           }
-        }
-        & > a {
-          color: #777;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 14px;
         }
         margin-bottom: 8px;
         &:last-child {

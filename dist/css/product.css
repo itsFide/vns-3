@@ -55,14 +55,11 @@
 .modal__product-name {
   margin-bottom: 17px;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 20px;
 }
 .modal__product-text {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 25px;
   opacity: 0.8;
   margin-bottom: 30px;
@@ -96,8 +93,6 @@
   border-radius: 6px;
   padding: 8px 20px;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 25px;
   text-align: center;
   display: flex;
@@ -154,6 +149,9 @@
   .modal__actions {
     flex-direction: column;
   }
+  .modal__actions .modal__btn {
+    justify-content: center;
+  }
   .modal__top .modal__product-image {
     height: 300px;
   }
@@ -198,15 +196,12 @@
 }
 .product__title {
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 20px;
 }
 .product__text {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 25px;
   margin-bottom: 30px;
 }
@@ -231,8 +226,6 @@
 .product__item__cart-btn {
   text-align: center;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 16px;
   white-space: nowrap;
   padding: 10px 26px;
@@ -245,13 +238,10 @@
 }
 .product__item__download-link p {
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 12px;
 }
 .product__item__name {
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 10px;
@@ -259,8 +249,6 @@
 .product__item__text {
   max-width: 95%;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 15px;
   opacity: 0.8;
   margin-bottom: 25px;
@@ -290,7 +278,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1080px) {
   .product__inner {
     flex-direction: column;
   }
@@ -308,19 +296,6 @@
   }
   .product__item__cart-btn {
     font-size: 14px;
-  }
-}
-@media screen and (max-width: 780px) {
-  .product__item {
-    width: 100%;
-  }
-  .product__title {
-    font-size: 26px;
-    margin-bottom: 10px;
-  }
-  .product__text {
-    font-size: 14px;
-    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 780px) {

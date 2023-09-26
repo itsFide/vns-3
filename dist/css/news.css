@@ -25,14 +25,12 @@
 .news__preview__info .news__title {
   color: #19191a;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
   line-height: 35px;
   margin-bottom: 20px;
 }
 .news__preview__info .news__text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.2px;
   opacity: 0.8;
@@ -68,13 +66,11 @@
 .news__item p {
   color: #777;
   font-size: 14px;
-  font-weight: 400;
   line-height: 14px;
 }
 
 .more-btn {
   font-size: 16px;
-  font-weight: 400;
   line-height: 16px;
   display: inline-block;
   padding: 10px 20px;

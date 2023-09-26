@@ -4,15 +4,12 @@
   padding-bottom: 100px;
   &__title {
     font-size: 30px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
     margin-bottom: 20px;
   }
   &__text {
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 25px;
     margin-bottom: 30px;
   }
@@ -38,8 +35,6 @@
     &__cart-btn {
       text-align: center;
       font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
       line-height: 16px;
       white-space: nowrap;
       padding: 10px 26px;
@@ -51,14 +46,11 @@
       gap: 2px;
       p {
         font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 12px;
       }
     }
     &__name {
       font-size: 18px;
-      font-style: normal;
       font-weight: 500;
       line-height: 22px;
       margin-bottom: 10px;
@@ -66,8 +58,6 @@
     &__text {
       max-width: 95%;
       font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
       line-height: 15px;
       opacity: 0.8;
       margin-bottom: 25px;
@@ -99,7 +89,7 @@
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1080px) {
   .product {
     &__inner {
       flex-direction: column;
@@ -136,23 +126,6 @@
     }
   }
 }
-
-@media screen and (max-width: 780px) {
-  .product {
-    &__item {
-      width: 100%;
-    }
-    &__title {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-    &__text {
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-  }
-}
-
 @media screen and (max-width: 480px) {
   .product {
     &__item {

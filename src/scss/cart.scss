@@ -9,9 +9,7 @@
   }
 
   &__text {
-    color: #000;
     font-size: 16px;
-    font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.2px;
     opacity: 0.8;
@@ -29,9 +27,7 @@
     align-items: center;
     gap: 20px;
     p {
-      color: #000;
       font-size: 16px;
-      font-weight: 400;
       opacity: 0.8;
       line-height: 25px;
     }
@@ -89,16 +85,14 @@
       }
     }
     &__info {
-      h3 {
-        color: #000;
+      & h3 {
         font-size: 20px;
         font-weight: 700;
         line-height: 20px;
         margin-bottom: 15px;
       }
-      p {
+      & p {
         font-size: 16px;
-        font-weight: 400;
         line-height: 20px;
         opacity: 0.8;
         max-width: 90%;
@@ -142,10 +136,10 @@
   .cart {
     &__item {
       &__info {
-        h3 {
+        & h3 {
           font-size: 18px;
         }
-        p {
+        & p {
           font-size: 14px;
           margin-bottom: 30px;
         }
