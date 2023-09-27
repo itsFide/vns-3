@@ -27,6 +27,7 @@ const serviceSlider = new Swiper(".service__slider", {
         el: '.swiper-service-pagination',
         dynamicBullets: true,
         clickable: true,
+
     },
     navigation: {
         nextEl: ".swiper-service-button-next",

@@ -204,13 +204,21 @@
     border-radius: 50%;
     width: 50px;
     display: flex;
+
     align-items: center;
     justify-content: center;
     height: 50px;
+    transition: 0.3s all;
+    &:hover {
+      background-color: rgba(#1b3768, 0.7);
+    }
 
     & svg {
       height: 20px;
       width: 20px;
+      &:hover {
+        opacity: 1;
+      }
 
       & path {
         fill: white;
@@ -224,10 +232,16 @@
 
   & .swiper-button-prev {
     left: -50px;
+    & svg {
+      transform: translateX(-2px);
+    }
   }
 
   & .swiper-button-next {
     right: -50px;
+    & svg {
+      transform: translateX(2px);
+    }
   }
 
   &__title {
@@ -349,11 +363,17 @@
     align-items: center;
     justify-content: center;
     height: 50px;
+    transition: 0.3s all;
+    &:hover {
+      background-color: rgba(#1b3768, 0.7);
+    }
 
     & svg {
       height: 20px;
       width: 20px;
-
+      &:hover {
+        opacity: 1;
+      }
       & path {
         fill: white;
       }
@@ -363,13 +383,18 @@
       display: none;
     }
   }
-
   & .swiper-button-prev {
     left: -50px;
+    & svg {
+      transform: translateX(-2px);
+    }
   }
 
   & .swiper-button-next {
     right: -50px;
+    & svg {
+      transform: translateX(2px);
+    }
   }
 
   &__title {
@@ -654,12 +679,13 @@
       }
 
       & input {
+        color: #8594aa;
         outline: none;
         border: none;
         font-size: 18px;
         border-radius: 4px;
         line-height: 1.333;
-        font-weight: 400;
+        font-weight: 300;
         padding: 10px 20px;
         background-color: white;
       }
@@ -727,11 +753,16 @@
     align-items: center;
     justify-content: center;
     height: 50px;
-
+    transition: 0.3s all;
+    &:hover {
+      transform: scale(1.1);
+    }
     & svg {
       height: 20px;
       width: 20px;
-
+      &:hover {
+        opacity: unset;
+      }
       & path {
         fill: white;
       }
@@ -744,10 +775,16 @@
 
   & .swiper-button-prev {
     left: -50px;
+    & svg {
+      transform: translateX(-2px);
+    }
   }
 
   & .swiper-button-next {
     right: -50px;
+    & svg {
+      transform: translateX(2px);
+    }
   }
 
   &__divider {
