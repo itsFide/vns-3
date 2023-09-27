@@ -26,6 +26,7 @@ const serviceSlider = new Swiper(".service__slider", {
     pagination: {
         el: '.swiper-service-pagination',
         dynamicBullets: true,
+        clickable: true,
     },
     navigation: {
         nextEl: ".swiper-service-button-next",
@@ -61,6 +62,7 @@ const advantagesSlider = new Swiper(".advantages__slider", {
     pagination: {
         el: '.swiper-pagination-advantages',
         dynamicBullets: true,
+        clickable: true,
     },
     navigation: {
         nextEl: ".swiper-advantages-button-next",
@@ -96,6 +98,7 @@ const newsSlider = new Swiper(".news__slider", {
     pagination: {
         el: '.swiper-news-pagination',
         dynamicBullets: true,
+        clickable: true,
     },
     navigation: {
         nextEl: ".swiper-news-button-next",

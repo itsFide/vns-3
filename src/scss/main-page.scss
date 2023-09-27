@@ -94,7 +94,7 @@
     &:hover {
       background-color: white;
       color: var(--primary-font-color);
-      transform: scale(1.05);
+      transform: scale(1.05) translateY(3px);
       & svg {
         & path {
           fill: var(--primary-font-color)
@@ -161,7 +161,7 @@
       transition: 0.3s all;
 
       &:hover {
-        transform: scale(1.02);
+        transform: scale(1.02) translateY(3px);
         background-color: white;
         color: var(--primary-font-color)
       }
@@ -675,7 +675,7 @@
       transition: 0.3s all;
 
       &:hover {
-        transform: scale(1.02);
+        transform: scale(1.02) translateY(3px);
         background-color: #dcdcdc;
         color: var(--primary-font-color)
       }
