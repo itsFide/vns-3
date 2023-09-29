@@ -11,17 +11,14 @@ const serviceSlider = new Swiper(".service__slider", {
         0: {
             slidesPerView: 1,
         },
-        480: {
-            spaceBetween: 20,
+        560: {
             slidesPerView: 2,
+            spaceBetween: 20,
         },
-        670: {
-            spaceBetween: 40,
+        780: {
+            spaceBetween: 20,
             slidesPerView: 3,
         },
-        860: {
-            slidesPerView: 3,
-        }
     },
     pagination: {
         el: '.swiper-service-pagination',
@@ -52,11 +49,16 @@ const advantagesSlider = new Swiper(".advantages__slider", {
             spaceBetween: 20,
             slidesPerView: 2,
         },
-        670: {
-            spaceBetween: 40,
+        560: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+        },
+        780: {
+            spaceBetween: 20,
             slidesPerView: 3,
         },
         860: {
+            spaceBetween: 40,
             slidesPerView: 3,
         }
     },
@@ -88,11 +90,20 @@ const newsSlider = new Swiper(".news__slider", {
             spaceBetween: 20,
             slidesPerView: 2,
         },
-        670: {
+        580: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+        },
+        680: {
             spaceBetween: 40,
+            slidesPerView: 2,
+        },
+        780: {
+            spaceBetween: 20,
             slidesPerView: 3,
         },
-        860: {
+        1260: {
+            spaceBetween: 40,
             slidesPerView: 3,
         }
     },

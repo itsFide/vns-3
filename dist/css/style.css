@@ -298,15 +298,13 @@ body {
   opacity: 1;
 }
 .header .dropdown {
-  width: 100vw;
   position: absolute;
   width: 100%;
   left: 0;
   height: auto;
   top: 75px;
-  z-index: 10;
   visibility: hidden;
-  height: auto;
+  z-index: 10;
   display: flex;
   padding: 30px 0 40px 0;
   background-color: #ffffff;
@@ -319,22 +317,22 @@ body {
 }
 .header .dropdown__menu {
   position: relative;
-  display: block;
-  max-width: 400px;
+  display: inline-flex;
+  flex-direction: column;
 }
-.header .dropdown__menu li {
-  padding: 0;
-  padding-bottom: 9px;
+.header .dropdown__menu .menu--show {
+  visibility: visible;
 }
-.header .dropdown__menu li:last-child {
-  padding-bottom: 0;
-}
-.header .dropdown__menu li:hover > a {
+.header .dropdown__menu .item--active {
   font-weight: bold;
   color: var(--accent-color);
 }
-.header .dropdown__menu li:hover > ul {
-  visibility: visible;
+.header .dropdown__menu li {
+  padding: 0 0 15px;
+  display: inline-flex;
+}
+.header .dropdown__menu li:last-child {
+  padding-bottom: 0;
 }
 .header .dropdown__menu li ul {
   height: auto;
@@ -355,9 +353,6 @@ body {
   opacity: 0.8;
   line-height: 14px;
 }
-.header .dropdown__menu li ul li:hover .header .dropdown__menu li ul li > ul {
-  visibility: visible;
-}
 .header .dropdown__menu li ul li ul {
   height: auto;
   visibility: hidden;
@@ -377,6 +372,7 @@ body {
 }
 .header .dropdown__menu a:hover {
   color: var(--accent-color);
+  font-weight: bold;
 }
 .header .dropdown__menu a:hover::before {
   display: none;
@@ -405,7 +401,7 @@ body {
 
 @media (max-width: 1280px) {
   .header {
-    padding: 15px 0;
+    padding: 18px 0;
   }
   .header__menu, .header__socials, .header__contacts {
     display: none;
@@ -478,6 +474,9 @@ body {
 .footer {
   background-color: #06293f;
   padding-top: 75px;
+}
+.footer a, .footer ul, .footer span, .footer div, .footer strong, .footer h3, .footer h2 {
+  font-family: Rubik, "sans-serif";
 }
 .footer__top {
   padding-bottom: 37px;
@@ -596,6 +595,25 @@ body {
   margin-left: 50px;
 }
 
+@media screen and (max-width: 1120px) {
+  .footer__bottom .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__logo {
+    margin-bottom: 5px;
+  }
+  .footer__menu {
+    margin-bottom: 20px;
+  }
+  .footer .rights {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .footer .powered {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 920px) {
   .footer {
     padding-top: 40px;
@@ -626,13 +644,12 @@ body {
     margin-left: auto;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 620px) {
   .footer__container {
     flex-direction: column;
   }
   .footer__menu {
     margin-left: 0;
-    margin-top: 15px;
     margin-bottom: 15px;
   }
   .footer__menu ul {
@@ -640,11 +657,12 @@ body {
     flex-direction: column;
     flex-wrap: unset;
   }
-  .rights {
+  .footer .rights {
     margin-left: 0;
     margin-top: 10px;
+    margin-bottom: 15px;
   }
-  .powered {
+  .footer .powered {
     margin-left: 0;
   }
 }
@@ -788,6 +806,10 @@ svg {
 }
 svg:hover {
   opacity: 0.5;
+}
+
+strong {
+  font-weight: 700;
 }
 
 .overlay {

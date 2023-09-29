@@ -5,6 +5,7 @@
     display: flex;
     gap: 20px;
     &__image {
+      display: block;
       width: 530px;
       height: 355px;
       & img {
@@ -44,6 +45,7 @@
   &__item {
     width: calc(100% / 3 - 15px);
     &__image {
+      display: block;
       width: 100%;
       margin-bottom: 15px;
       border-radius: 4px;

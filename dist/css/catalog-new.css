@@ -21,11 +21,17 @@
 }
 .catalog__item h3 {
   width: 60%;
+  margin-bottom: 15px;
+}
+.catalog__item h3 a {
   color: #1b3768;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
-  margin-bottom: 15px;
+  transition: 0.3s all;
+}
+.catalog__item h3:hover a {
+  opacity: 0.65;
 }
 .catalog__item__column > img {
   max-width: 70px;
