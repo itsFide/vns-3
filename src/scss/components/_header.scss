@@ -1,7 +1,23 @@
 .header {
   margin: 0 auto;
   border-bottom: 0.5px solid rgba(151, 151, 151, 0.3);
+  &__cart{
+    position: relative; 
 
+    & .count__busket{
+      position: absolute;
+      color: #fff;
+      background-color: #F49719;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: -12px;
+      top: -12px;
+    }
+  }
   &__logo {
     user-select: none;
   }
@@ -27,7 +43,21 @@
 
     &__cart {
       align-items: center;
+      position: relative; 
 
+      & .count__busket{
+        position: absolute;
+        color: #fff;
+        background-color: #F49719;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: -12px;
+        top: -12px;
+      }
       svg {
         height: 30px;
         width: 30px;

@@ -1,9 +1,36 @@
+// IMPORT COMPONENTS
 @import "components/vars";
 @import "components/global";
-@import "components/header";
-@import "components/footer";
-@import "components/media";
+@import "components/modal";
+@import "components/pagination";
 @import "components/aside";
+@import "components/viewed-items";
+@import "components/brands-filter";
+@import "components/tags";
+@import "components/item-with-cart";
+@import "components/header";
+// IMPORT PAGES
+@import "pages/main";
+@import "pages/catalog";
+@import "pages/categories";
+@import "pages/products";
+@import "pages/single-product";
+@import "pages/projects";
+@import "pages/single-project";
+@import "pages/news";
+@import "pages/single-news";
+@import "pages/services";
+@import "pages/single-services";
+@import "pages/cart";
+@import "pages/brands";
+@import "pages/company";
+@import "pages/catalog-new";
+@import "pages/categories-new";
+@import "pages/subcategories-new";
+@import "pages/single-product-new";
+// IMPORT COMPONENTS
+@import "components/footer";
+
 
 a {
   font-size: inherit;
@@ -13,6 +40,7 @@ a {
   line-height: inherit;
   letter-spacing: inherit;
 }
+
 svg {
   transition: all 0.3s;
   &:hover {
@@ -97,7 +125,19 @@ strong {
     cursor: pointer;
   }
 }
-
+.modal__counter{
+  gap: 0;
+  & button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    & img{
+      position: relative;
+      z-index: -1;
+    }
+  }
+}
 @media screen and (max-width: 780px) {
   .breadcrumbs {
     margin-bottom: 25px;
